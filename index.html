@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>TripCast</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Travel, Trip, Tour, HTML, CSS, JQuery, Template">
+	<meta name="author" content="Kafi Rashid">
+	<link rel="icon" href="images/misc/fav.png" type="image/x-icon">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/scrollbar.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/datepicker.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+	
+	<!-- HEADER BANNER, LOGO & MENU STARTS -->
+	<div id="header-background">
+		<img class="header-img" src="images/places/from_unsplash.jpg">
+		<div id="header-foreground" class="hidden-xs-ddas"></div>
+		<div class="container">
+			<div id="header-content" class="container">
+
+				<!-- LOGO -->
+				<div id="header-logo">
+					<img src="images/misc/hexa.png">
+					<p>TripCast</p>
+				</div>
+
+				<!-- CAPTIONS -->
+				<div class="header-title animated flipInX">
+					<p>Sundorase jaygata</p>
+				</div>
+				<div class="header-subtitle animated flipInX">
+					<p>Chittagong er vua chhobi. Unsplash website theke neya.</p>
+				</div>
+				<button class="header-button animated flipInX">Learn More</button>
+
+				<!-- WEATHER INFORMATION -->
+				<div id="weather-info" class="animated flipInX">
+					<div id="weather-info-location"></div>
+					<div id="weather-info-title">
+						Weather Condition
+					</div>
+					<div id="weather-info-con">
+						<div id="weather-info-temp"></div><div id="weather-info-icon"></div>
+					</div>
+				</div>
+
+				<!-- MENU -->
+				<div id="top-menu">
+					<div id="menu-icon">
+						<i class="material-icons">menu</i>
+					</div>
+					<div id="menu">
+						<div id="menu-close">
+							<i class="material-icons">close</i>
+						</div>
+						<div id="menu-item">
+							<ul>
+								<li><a href="#" class="active">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Projects</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- HEADER BANNER, LOGO & MENU ENDS -->
+
+	<!-- MAIN FOCUS INFORMATION STARTS -->
+	<div class="container">
+		<div class="col-lg-12 focus-container">
+
+			<!-- FOCUS INFO -->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<p id="focus-coords"></p>
+				<p id="focus-title">
+					SUNDORASE JAYGATA
+				</p>
+				<p id="focus-content">
+					Pellentesque vel ultrices velit. Aliquam laoreet tincidunt est quis iaculis. Nam gravida elit ultricies, vestibulum enim at, tempor eros. Nulla non ipsum quam. Suspendisse libero mi, maximus et erat iaculis, elementum fringilla tellus. Pellentesque tristique consequat sapien id aliquet.<br>
+					Morbi metus nunc, aliquet ut varius in, feugiat a felis. Aenean suscipit purus libero, ut suscipit velit faucibus ac. Aenean ultricies sapien a neque vulputate consequat. Duis feugiat velit vitae mi ornare cursus. Vivamus a tristique massa, non imperdiet diam. Nam mattis lectus felis, at sagittis nisi sodales vel.<br>
+					Proin fringilla bibendum lorem id placerat. Morbi lectus diam, suscipit sit amet purus non, interdum laoreet augue.
+				</p>
+			</div>
+
+			<!-- FOCUS MAP DATA -->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div id="focus-map"></div>
+			</div>
+
+		</div>
+	</div>
+	<!-- MAIN FOCUS INFORMATION ENDS -->
+
+	<!-- PLACES STARTS -->
+	<div class="container" id="places">
+		<div id="places-carousel" class="carousel slide" data-ride="carousel">
+
+			<div class="carousel-inner">
+				<div class="item col-lg-12 col-md-12 col-sm-12 col-xs-12 tight active">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 car-img-con tight" style="background-image: url('images/places/sajek.jpg');"></div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 car-cont-con tight">
+						<p class="carousel-title">interdum laoreet augue</p>
+						<p class="carousel-content">
+							Morbi metus nunc, aliquet ut varius in, feugiat a felis. Aenean suscipit purus libero, ut suscipit velit faucibus ac. Aenean ultricies sapien a neque vulputate consequat. Duis feugiat velit vitae mi ornare cursus. Vivamus a tristique massa, non imperdiet diam. Nam mattis lectus felis, at sagittis nisi sodales vel.
+						</p>
+						<button class="carousel-button">Read More</button>
+					</div>
+				</div>
+				<div class="item col-lg-12 col-md-12 col-sm-12 col-xs-12 tight">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 car-img-con tight" style="background-image: url('images/places/alps.jpg');"></div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 car-cont-con tight">
+						<p class="carousel-title">interdum laoreet augue</p>
+						<p class="carousel-content">
+							Morbi metus nunc, aliquet ut varius in, feugiat a felis. Aenean suscipit purus libero, ut suscipit velit faucibus ac. Aenean ultricies sapien a neque vulputate consequat. Duis feugiat velit vitae mi ornare cursus. Vivamus a tristique massa, non imperdiet diam. Nam mattis lectus felis, at sagittis nisi sodales vel.
+						</p>
+						<button class="carousel-button">Read More</button>
+					</div>
+				</div>
+				<div class="item col-lg-12 col-md-12 col-sm-12 col-xs-12 tight">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 car-img-con tight" style="background-image: url('images/places/nilgiri.jpg');"></div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 car-cont-con tight">
+						<p class="carousel-title">interdum laoreet augue</p>
+						<p class="carousel-content">
+							Morbi metus nunc, aliquet ut varius in, feugiat a felis. Aenean suscipit purus libero, ut suscipit velit faucibus ac. Aenean ultricies sapien a neque vulputate consequat. Duis feugiat velit vitae mi ornare cursus. Vivamus a tristique massa, non imperdiet diam. Nam mattis lectus felis, at sagittis nisi sodales vel.
+						</p>
+						<button class="carousel-button">Read More</button>
+					</div>
+				</div>
+				<div class="item col-lg-12 col-md-12 col-sm-12 col-xs-12 tight">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 car-img-con tight" style="background-image: url('images/places/unknown.jpg');"></div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 car-cont-con tight">
+						<p class="carousel-title">interdum laoreet augue</p>
+						<p class="carousel-content">
+							Morbi metus nunc, aliquet ut varius in, feugiat a felis. Aenean suscipit purus libero, ut suscipit velit faucibus ac. Aenean ultricies sapien a neque vulputate consequat. Duis feugiat velit vitae mi ornare cursus. Vivamus a tristique massa, non imperdiet diam. Nam mattis lectus felis, at sagittis nisi sodales vel.
+						</p>
+						<button class="carousel-button">Read More</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="car-ind-con">
+				<a class="left carousel-control" href="#places-carousel" data-slide="prev">
+					<i class="material-icons">keyboard_arrow_left</i>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#places-carousel" data-slide="next">
+					<i class="material-icons">keyboard_arrow_right</i>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- PLACES ENDS -->
+
+	<!-- PLACES STARTS -->
+	<div class="container" id="places-nav">
+		<div class="container">
+			<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 places-nav-title-con">
+				<p class="places-nav-title">
+					Adventure is out there
+				</p>
+				<p class="places-nav-slogan">
+					More places to discover
+				</p>
+			</div>
+			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 places-nav-names">
+				<button data-toggle="tab" href="#t0" class="places-name active">Korea</button><button data-toggle="tab" href="#t1" class="places-name">Thailand</button><button data-toggle="tab" href="#t2" class="places-name">Sri Lanka</button><button data-toggle="tab" href="#t3" class="places-name">Peru</button><button data-toggle="tab" href="#t4" class="places-name">Brazil</button><button data-toggle="tab" href="#t5" class="places-name">Chile</button><button data-toggle="tab" href="#t6" class="places-name">Tibet</button><button data-toggle="tab" href="#t7" class="places-name">Mexico</button><button data-toggle="tab" href="#t8" class="places-name">Nepal</button><button data-toggle="tab" href="" class="places-name">+</button>
+			</div>
+			<div class="tab-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                <div id="t0" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tab-pane active">
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Korean City</p>
+                		<p class="places-child-text">Korean City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Korean City</p>
+                		<p class="places-child-text">Korean City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Korean City</p>
+                		<p class="places-child-text">Korean City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="spacer col-lg-12 col-md-12 col-sm-12 hidden-xs">
+                		
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Korean City</p>
+                		<p class="places-child-text">Korean City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Korean City</p>
+                		<p class="places-child-text">Korean City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Korean City</p>
+                		<p class="places-child-text">Korean City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                </div>
+                <div id="t1" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tab-pane">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Thai City</p>
+                            <p class="places-child-text">Thai City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Thai City</p>
+                            <p class="places-child-text">Thai City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Thai City</p>
+                            <p class="places-child-text">Thai City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="spacer col-lg-12 hidden-xs">
+                            
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Thai City</p>
+                            <p class="places-child-text">Thai City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Thai City</p>
+                            <p class="places-child-text">Thai City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Thai City</p>
+                            <p class="places-child-text">Thai City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                </div>
+                <div id="t2" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tab-pane">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Lankan City</p>
+                            <p class="places-child-text">Lankan City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Lankan City</p>
+                            <p class="places-child-text">Lankan City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Lankan City</p>
+                            <p class="places-child-text">Lankan City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="spacer col-lg-12 hidden-xs">
+                            
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Lankan City</p>
+                            <p class="places-child-text">Lankan City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Lankan City</p>
+                            <p class="places-child-text">Lankan City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Lankan City</p>
+                            <p class="places-child-text">Lankan City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                </div>
+                <div id="t3" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tab-pane">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Peru City</p>
+                            <p class="places-child-text">Peru City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Peru City</p>
+                            <p class="places-child-text">Peru City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Peru City</p>
+                            <p class="places-child-text">Peru City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="spacer col-lg-12 hidden-xs">
+                            
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Peru City</p>
+                            <p class="places-child-text">Peru City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Peru City</p>
+                            <p class="places-child-text">Peru City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                            <p class="places-child-title">Peru City</p>
+                            <p class="places-child-text">Peru City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                </div>
+                <div id="t4" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tab-pane">
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Brazil City</p>
+                		<p class="places-child-text">Brazil City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Brazil City</p>
+                		<p class="places-child-text">Brazil City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Brazil City</p>
+                		<p class="places-child-text">Brazil City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="spacer col-lg-12 hidden-xs">
+                		
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Brazil City</p>
+                		<p class="places-child-text">Brazil City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Brazil City</p>
+                		<p class="places-child-text">Brazil City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Brazil City</p>
+                		<p class="places-child-text">Brazil City libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                </div>
+                <div id="t5" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tab-pane">
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Chilenan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Chilenan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Chilenan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="spacer col-lg-12 hidden-xs">
+                		
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Chilenan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Chilenan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Chilenan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                </div>
+                <div id="t6" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tab-pane">
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Tibetan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Tibetan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Tibetan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="spacer col-lg-12 hidden-xs">
+                		
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Tibetan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Tibetan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Tibetan City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                </div>
+                <div id="t7" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tab-pane">
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Mexican City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Mexican City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Mexican City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="spacer col-lg-12 hidden-xs">
+                		
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Mexican City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Mexican City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Mexican City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                </div>
+                <div id="t8" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tab-pane">
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Nepali City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Nepali City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Nepali City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="spacer col-lg-12 hidden-xs">
+                		
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Nepali City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Nepali City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 places-child">
+                		<p class="places-child-title">Nepali City</p>
+                		<p class="places-child-text">Curabitur libero dui, vehicula a tortor eu, rhoncus porttitor felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                	</div>
+                </div>
+                
+            </div>
+		</div>
+	</div>
+	<!-- PLACES ENDS -->
+
+	<!-- PLAN A TOUR STARTS -->
+	<section id="plan-tour">
+		<div class="black-layer"></div>
+		<div class="container">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 plan-header">
+				<p class="plan-title text-center">Plan a journey</p>
+				<p class="plan-subtitle text-center">
+					Aenean ultricies sapien a neque vulputate consequat. Duis feugiat velit vitae mi ornare cursus. Vivamus a tristique massa, non imperdiet diam. Nam mattis lectus felis, at sagittis nisi sodales vel.
+				</p>
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-container text-center">
+				<input type="text" class="input-field" placeholder="Country">
+				<input type="text" class="input-field" placeholder="City">
+				<input type="text" class="datepicker-here input-field" placeholder="Date">
+				<button class="plan-button">Book Now</button>
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+				<p class="text-center contact-info align-top"><span>More Information</span> <i class="material-icons">phone</i> <span>880 1682 xxxxxx</span></p>
+			</div>
+		</div>
+	</section>
+	<!-- PLAN A TOUR ENDS -->
+
+	<!-- WE PART STARTS -->
+	<div class="container" id="we-part">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 we-header">
+			<p class="we-title text-center">We are the best</p>
+			<p class="we-subtitle text-center">
+				Aenean ultricies sapien a neque vulputate consequat. Duis feugiat velit vitae mi ornare cursus. Vivamus a tristique massa, non imperdiet diam. Nam mattis lectus felis, at sagittis nisi sodales vel.
+			</p>
+		</div>
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 we-contents">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 we-content">
+				<i class="material-icons">group</i>
+				<p class="we-content-title">Happy Customers</p>
+				<p class="we-content-content">Nullam posuere nulla at ultrices aliquam. Aliquam commodo commodo leo, ut hendrerit tortor vehicula sit amet. In volutpat diam quis suscipit aliquam.</p>
+				<button class="we-content-button">Learn More</button>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 we-content">
+				<i class="material-icons">account_balance</i>
+				<p class="we-content-title">Our amazing tours</p>
+				<p class="we-content-content">Nullam posuere nulla at ultrices aliquam. Aliquam commodo commodo leo, ut hendrerit tortor vehicula sit amet. In volutpat diam quis suscipit aliquam.</p>
+				<button class="we-content-button">Learn More</button>
+			</div>
+			<div class="hidden-lg hidden-md hidden-sm col-xs-12 spacer"></div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 we-content">
+				<i class="material-icons">camera_enhance</i>
+				<p class="we-content-title">support cases</p>
+				<p class="we-content-content">Nullam posuere nulla at ultrices aliquam. Aliquam commodo commodo leo, ut hendrerit tortor vehicula sit amet. In volutpat diam quis suscipit aliquam.</p>
+				<button class="we-content-button">Learn More</button>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 we-content">
+				<i class="material-icons">directions_transit</i>
+				<p class="we-content-title">our cruises</p>
+				<p class="we-content-content">Nullam posuere nulla at ultrices aliquam. Aliquam commodo commodo leo, ut hendrerit tortor vehicula sit amet. In volutpat diam quis suscipit aliquam.</p>
+				<button class="we-content-button">Learn More</button>
+			</div>
+		</div>
+	</div>
+	<!-- WE PART ENDS -->
+
+	<!-- FOOTER STARTS -->
+	<section id="footer">
+		<div class="white-layer"></div>
+		<div class="container">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 newsletter">
+				<p class="newsletter-title"><strong>Join</strong><br>the newsletter</p>
+				<p class="newsletter-subtitle">to receive our best money deals</p>
+				<input type="text" class="newsletter-field" placeholder="Email Address">
+			</div>
+			<div class="spacer col-xs-12 hidden-lg hidden-md hidden-sm"></div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-child">
+	            <p class="newsletter-title"><strong>Contact</strong><br>We will be happy to help you</p>
+	            <p class="newsletter-subtitle email">manikdeb@gmail.com</p>
+	            <div class="social-links">
+	                <a href="#" target="_blank"><img src="images/social/facebook_2.png"></a>
+	                <a href="#" target="_blank"><img src="images/social/twitter.png"></a>
+	                <a href="#" target="_blank"><img src="images/social/instagram.png"></a>
+	                <a href="#" target="_blank"><img src="images/social/messenger.png"></a>
+	            </div>
+			</div>
+
+		</div>
+	</section>
+	<!-- FOOTER ENDS -->
+
+	<!-- GLOBAL SITE TAG (GTAG.JS) - GOOGLE ANALYTICS -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114989551-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-114989551-1');
+	</script>
+	<!-- GOOGLE ANALYTICS ENDS -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/scrollbar.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxy6_8BYWN0QrrvJcDKGrLVffHVXRplgw&callback=initMap"></script>
+
+</body>
+</html>
